@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #08162b;
+    color: #ffffff;
+    min-height: 100vh;
+  }
+}
+
+/* Textura sutil de pontinhos finos (dot grid) */
+.bg-subtle-dots {
+  background-color: #08162b;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+    radial-gradient(rgba(212, 175, 55, 0.12) 1.2px, transparent 1.2px);
+  background-size: 100% 100%, 28px 28px;
+}
+
+/* Animação de flutuação dos blocos de Concurso */
+@keyframes floatConcurso {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floating-concurso {
+  animation: floatConcurso 6s ease-in-out infinite;
+}
+
+.floating-concurso:hover {
+  animation-play-state: paused;
+}
+
+/* Pulsação delicada para as bolinhas decorativas */
+@keyframes gentleTwinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+}
+
+.animate-twinkle-1 {
+  animation: gentleTwinkle 3.5s ease-in-out infinite;
+}
+
+.animate-twinkle-2 {
+  animation: gentleTwinkle 4.8s ease-in-out infinite 1.2s;
+}
+
+.animate-twinkle-3 {
+  animation: gentleTwinkle 5.5s ease-in-out infinite 2.5s;
+}

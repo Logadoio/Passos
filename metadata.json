@@ -1,0 +1,6 @@
+{
+  "name": "Passos Estudos",
+  "description": "Plataforma focada em cursos preparatórios para concursos públicos com cursos flutuantes segmentados por cargo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
